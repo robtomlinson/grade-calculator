@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+      table, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+        font-size: 14px;
+      }
+      th {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      td {
+        font-family: 'Courier New', Courier, monospace;
+        min-width: 80px;
+      }
+    </style>
+    <script src="grades.js"></script>
+  </head>
+
+  <body>
+    <table>
+      <thead style="background-color: yellow">
+        <tr>
+          <th colspan="5" style="text-align: center">Grade Calculator</th>
+        </tr>
+        <tr>
+          <th>Sta1</th>
+          <th>EL1</th>
+          <th>Sta2</th>
+          <th>EL2</th>
+          <th>Grade(%)</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <form name="GRADECALC">
+            <td>
+              <input size="8" value="100.00" step="0.01" type="number" tabindex="1" autofocus name="gradeSTA1" id="gradeCalcSTA1" oninput="gradeCalc();">
+            </td>
+            <td>
+              <input size="8" value="1000.00" step="0.01" type="number" tabindex="2" name="gradeEL1" id="gradeCalcEL1" oninput="gradeCalc();">
+            </td>
+            <td>
+              <input size="8" value="150.00" step="0.01" type="number" tabindex="3" name="gradeSTA2" id="gradeCalcSTA2" oninput="gradeCalc();">
+            </td>
+            <td>
+              <input size="8" value="1000.00" step="0.01" type="number" tabindex="4" name="gradeEL2" id="gradeCalcEL2" oninput="gradeCalc();">
+            </td>
+            <td style = "background-color: lightyellow">
+              <output name="gradeOUTPUT" id="gradeCalcGRADE"></output>
+            </td>
+          </form>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+
+    <table>
+      <thead style="background-color: paleturquoise">
+        <tr>
+          <th colspan="5" style="text-align: center">Station Elevation Calculator</th>
+        </tr>
+        <tr>
+          <th>Sta1</th>
+          <th>EL1</th>
+          <th>Sta2</th>
+          <th>Grade(%)</th>
+          <th>EL2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <form name="ELEVCALC">
+            <td>
+              <input size="8" value="100.00" step="0.01" type="number" tabindex="6" name="elevSTA1" id="staCalcSta1" oninput="elevCalc();">
+            </td>
+            <td>
+              <input size="8" value="1000.00" step="0.01" type="number" tabindex="7" name="elevEL1" id="staCalcEL1" oninput="elevCalc();">
+            </td>
+            <td>
+              <input size="8" value="150.00" step="0.01" type="number" tabindex="8" name="elevSTA2" id="staCalcSta2" oninput="elevCalc();">
+            </td>
+            <td>
+              <input size="8" value="0.00" step="0.1" type="number" tabindex="9" name="elevGRADE" id="staCalcGrade" oninput="elevCalc();">
+            </td>
+            <td style = "background-color: lightcyan">
+              <output name="elevOUTPUT" id="staCalcEL2"></output>
+            </td>
+          </form>
+        </tr>
+      </tbody>
+    </table>
+    <br><br>
+
+    <table>
+      <thead style="background-color: salmon">
+        <tr>
+          <th colspan="5" style="text-align: center">Grade Degree Calculator</th>
+        </tr>
+        <tr>
+          <th>Sta1</th>
+          <th>EL1</th>
+          <th>Sta2</th>
+          <th>Degree</th>
+          <th>EL2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <form name="DEGREECALC">
+            <td>
+              <input size="8" value="100.00" step="0.01" type="number" tabindex="10" name="degrSTA1" id="degrCalcSta1" oninput="degrCalc();">
+            </td>
+            <td>
+              <input size="8" value="1000.00" step="0.01" type="number" tabindex="11" name="degrEL1" id="degrCalcEL1" oninput="degrCalc();">
+            </td>
+            <td>
+              <input size="8" value="150.00" step="0.01" type="number" tabindex="12" name="degrSTA2" id="degrCalcSta2" oninput="degrCalc();">
+            </td>
+            <td>
+              <input size="8" value="0.00" step="0.1" type="number" tabindex="13" name="degrDEGR" id="degrCalcDegree" oninput="degrCalc();">
+            </td>
+            <td style = "background-color: lightpink">
+              <output name="degrOUTPUT" id="degrCalcEL2"></output>
+            </td>
+          </form>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
